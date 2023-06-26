@@ -28,9 +28,9 @@ Later, specificity/TNR is added the output since it was shown that it is equal t
 
 ## Table of contents
 
-- data data access
+- data: data access
 - scripts: modified scripts
-- output
+- output:
 - JUPYTER_NOTEBOOK: TNR & WSS analysis
 - gitignore
 - LICENCE
