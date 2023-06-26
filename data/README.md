@@ -3,21 +3,34 @@
 
 ## Synergy dataset
 
-The datasets used in the current project are part of the SYNERGY dataset, which comprises 26 manually labeled systematic review datasets.The datasets are characterized by a small proportion of relevant records. (Range: 0.2 to 21.9% relevant records. 
-See [SYNERGY dataset](https://github.com/asreview/synergy-dataset) for an overview of all datasets.
+The datasets used in the current project are part of the SYNERGY dataset, which comprises 26 manually labeled systematic review datasets. The datasets are characterized by a small proportion of relevant records ranging from 0.2 to 21.9%. 
+See[SYNERGY dataset](https://github.com/asreview/synergy-dataset) for an overview of all datasets.
 
 
-## Subset Synergy
-24 out of 26 datasets of manually labeled systematic reviews were used in this project. Brouwer_2018 and Walker_2018 were excluded due to the high expected computation time based on their large size (38114 and 48375 records respectively). 
-The SYNERGY dataset can be donwloaded by installing the synergy-dataset Python package.
-
+To get the dataset, run the command below in the command line to install the synergy-dataset package.
 ```
-pip intall synergy-dataset
+pip install synergy-dataset
 ```
-Run this command in the command line.
 
+To download the dataset, run the following command in the command line:
 ```
 python -m synergy_dataset get 
 ```
 Alternatively, .zip of the dataset can be downloaded at https://dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/HE6NAQ
+
+@data{HE6NAQ_2023,
+author = {De Bruin, Jonathan and Ma, Yongchao and Ferdinands, Gerbrich and Teijema, Jelle and Van de Schoot, Rens},
+publisher = {DataverseNL},
+title = {{SYNERGY - Open machine learning dataset on study selection in systematic reviews}},
+year = {2023},
+version = {V1},
+doi = {10.34894/HE6NAQ},
+url = {https://doi.org/10.34894/HE6NAQ}
+}
+
+
+
+## Subset Synergy dataset
+24 out of 26 datasets of the SYNERGY dataset were used in this project. Brouwer_2018 and Walker_2018 were excluded due to the high expected computation time based on their large size (38114 and 48375 records respectively). 
+The SYNERGY dataset can be donwloaded by installing the synergy-dataset Python package.
 
