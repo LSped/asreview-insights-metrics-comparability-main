@@ -22,7 +22,7 @@ python -m synergy_dataset get
 Alternatively, a .zip file of the dataset can be downloaded at https://dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/HE6NAQ
 
 
-## Subset Synergy dataset
-24 out of 26 datasets of the SYNERGY dataset were used in this project. Brouwer_2018 and Walker_2018 were excluded due to the high expected computation time based on their large size (38114 and 48375 records respectively). 
+# Subset Synergy dataset
+24 out of 26 datasets of the SYNERGY dataset were used in this project. **Brouwer_2018** and **Walker_2018** were excluded due to the high expected computation time based on their large size (38114 and 48375 records respectively). 
 
 
