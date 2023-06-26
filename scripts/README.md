@@ -17,7 +17,7 @@ pip install insights==1.1.2
 ```
 
 
-### Replace files in asreviewcontrib
+### Replace files in asreviewcontrib/insights/
 ...
 
 
