@@ -140,6 +140,7 @@ All sliced TP, FP, TN, FN values and TNR are added to the JSON ouput.
 ### plot.py
 
 Functions added:
+
 Added imports:
 -import: `_tp_values, _fp_values, _tn_values, _fn_values`
 
@@ -166,12 +167,12 @@ Class PlotEntryPoint()
 
 Class MetricsEntryPoint()
 - Added cm parser agrument with default values 
-- Added `cm = args.cm` argument in get_metrics()
+- Added `cm = args.cm` argument in `get_metrics()`
 
 
-Condition is added to PlotEntryPoint() so that the TP, FP, TN, FN plot can be displayed using CLI commands.
-cm parser argument is added to MetricsEntryPoint() so that intercepts at which cm values should be returned can be specified. 
-tnr parser argument is added to MetricsEntryPoint() so that intercepts at which tnr should be returned can be specified.
+A condition is added to PlotEntryPoint() so that the TP, FP, TN, FN plot can be displayed using CLI commands.
+A cm parser argument is added to MetricsEntryPoint() so that intercepts at which cm values should be returned can be specified via CLI commands.
+A tnr parser argument is added to MetricsEntryPoint() so that intercepts at which tnr should be returned can be specified via CLI commands.
 
 
 
