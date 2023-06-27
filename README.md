@@ -37,7 +37,7 @@ The TNR is the proportion of irrelevant records that were correctly not reviewed
 
 
 Illustrating example at 95% recall:
-|Example             |                   |
+|Example @95% recall     |                   |
 |--------------------|-------------------|
 | Total records 	 | 2000              |
 | Records Reviewed	 | 1100              |
