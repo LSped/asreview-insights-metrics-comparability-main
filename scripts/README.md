@@ -151,14 +151,15 @@ These functions return plots of the TP, FP, TN, FN values. If x_absolute is spec
 
 ### `__init__.py`
 
-- Import: `plot_cm`
-- Added `'plot_cm'` to `_all_`
+- import `plot_cm`
+- Added `'plot_cm'` to `__all__`
+
 
 ### entrypoint.py
 
 Class PlotEntryPoint()
 - import `plot_cm`
-- Add `'cm'`: plot_cm to `TYPE_TO_FUNC`
+- Add `'cm': plot_cm` to `TYPE_TO_FUNC`
 - Add condition
 	- if `plot_type =='cm'`
 	- x_absolute argument only
@@ -166,12 +167,15 @@ Class PlotEntryPoint()
 
 Class MetricsEntryPoint()
 - Added cm parser agrument with default values 
+- Added tnr parser agrument with default values
 - Added `cm = args.cm` argument in `get_metrics()`
+- Added `tnr = args.tnr` argument in `get_metrics()`
+
 
 
 A condition is added to PlotEntryPoint() so that the TP, FP, TN, FN plot can be displayed using CLI commands.
-A cm parser argument is added to MetricsEntryPoint() so that intercepts at which cm values should be returned can be specified via CLI commands.
-A tnr parser argument is added to MetricsEntryPoint() so that intercepts at which tnr should be returned can be specified via CLI commands.
+A cm parser argument is added to MetricsEntryPoint() to return cm values at specified intercept(s) via CLI commands.
+A tnr parser argument is added to MetricsEntryPoint() to return tnr at specified intercept(s) via CLI commands.
 
 
 
