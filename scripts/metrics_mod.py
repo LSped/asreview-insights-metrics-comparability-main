@@ -232,6 +232,7 @@ def get_metrics(state_obj,
                 wss=[0.95],
                 erf=[0.10],
                 cm=[0.1, 0.25, 0.5, 0.75, 0.9],
+                tnr=[0.95],
                 priors=False,
                 x_absolute=False,
                 y_absolute=False,
@@ -240,7 +241,8 @@ def get_metrics(state_obj,
     recall = [recall] if not isinstance(recall, list) else recall
     wss = [wss] if not isinstance(wss, list) else wss
     erf = [erf] if not isinstance(erf, list) else erf
-    cm = [cm] if not isinstance(cm, list) else cm
+    cm = [cm] if not isinstance(cm, list) else cm  
+    tnr = [tnr] if not isinstance(tnr, list) else tnr    
     
     labels = pad_simulation_labels(state_obj, priors=priors)
 
@@ -276,7 +278,7 @@ def get_metrics(state_obj,
     ]
     tnr_values = [
         _tnr(labels, v, x_absolute=x_absolute)
-        for v in cm 
+        for v in tnr
     ]
 
     # based on https://google.github.io/styleguide/jsoncstyleguide.xml
@@ -323,7 +325,7 @@ def get_metrics(state_obj,
             }, {
                 "id": "tnr",
                 "title": "True Negative Rate (Specificity)",
-                "value": [(i, v) for i, v in zip(cm, tnr_values)]                                        
+                "value": [(i, v) for i, v in zip(tnr, tnr_values)]                                        
                }] 
         }
     }
@@ -334,5 +336,6 @@ def get_metrics(state_obj,
 def print_metrics(stats):
 
     print(json.dumps(stats, indent=4))
+
 
 

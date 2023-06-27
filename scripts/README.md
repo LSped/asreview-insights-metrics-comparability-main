@@ -22,7 +22,7 @@ pip install insights==1.1.2
 After having installed ASReview find the asreviewcontrib folder.It is located in the site-packages folder within your Python installation folders. Click on the insights subfolder.
 
 Replace
-- __init__.py 
+- _init_.py 
 - algorithms.py 
 - entrypoint.py
 - metrics.py
@@ -71,16 +71,16 @@ Sit back until the simulation is completed and all files are present in subfolde
 # Modified ASReview Insights Extension
 
 
-[ASReview Insights comprises](https://github.com/asreview/asreview-insights/tree/main/asreviewcontrib/insights) comprises the following files:
+[ASReview Insights](https://github.com/asreview/asreview-insights/tree/main/asreviewcontrib/insights) comprises the following files:
 
-- __init__.py*
+- _init_.py*
 - algorithms.py* 
 - entrypoint.py*
 - metrics.py*
 - plot.py*
 - utils.py
 
-*modified files
+*were modified
 
 
 ### Algorithms.py

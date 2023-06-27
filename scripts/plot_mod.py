@@ -298,8 +298,6 @@ def _plot_erf(ax, labels, x_absolute=False, y_absolute=False):
     return ax
 
 
-#NEW PLOT
-
 def plot_cm(ax,
                 state_obj,
                 priors=False,
@@ -313,6 +311,8 @@ def plot_cm(ax,
         State object from which to get the labels for the plot.
     priors: bool
         Include the prior in plot or not.
+    x_screened: bool
+        If True, the number of records screened is retrieved
     x_absolute: bool
         If True, the number of records is on the x-axis.
         If False, the fraction of the whole dataset is on the x-axis.
@@ -332,7 +332,7 @@ def plot_cm(ax,
 
 
 def _plot_cm(ax, labels, x_screened=True, x_absolute=False):
-    """Plot the recall of state object(s).
+    """Plot the cm values of state object(s).
 
     labels:
         An ASReview state object.

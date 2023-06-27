@@ -8,12 +8,12 @@ import matplotlib.pyplot as plt
 from asreviewcontrib.insights import plot_erf
 from asreviewcontrib.insights import plot_recall
 from asreviewcontrib.insights import plot_wss 
-from asreviewcontrib.insights import plot_cm #added also to innit file
+from asreviewcontrib.insights import plot_cm 
 from asreviewcontrib.insights.metrics import get_metrics
 from asreviewcontrib.insights.metrics import print_metrics
 
 PLOT_TYPES = ['recall']
-TYPE_TO_FUNC = {'recall': plot_recall, 'wss': plot_wss, 'erf': plot_erf, 'cm': plot_cm} #add
+TYPE_TO_FUNC = {'recall': plot_recall, 'wss': plot_wss, 'erf': plot_erf, 'cm': plot_cm} 
 
 
 class PlotEntryPoint(BaseEntryPoint):
@@ -84,7 +84,7 @@ class PlotEntryPoint(BaseEntryPoint):
                 plot_func(ax,
                          s,
                          priors=args.priors,
-                         x_absolute=args.x_absolute) #added                      
+                         x_absolute=args.x_absolute)                       
                     
             else:
                 plot_func(ax,
@@ -147,6 +147,12 @@ class MetricsEntryPoint(BaseEntryPoint):
                             nargs='+',
                             default=[0.1, 0.25, 0.5, 0.75, 0.8, 0.85, 0.9, 0.95, 1],
                             help='A (list of) values to compute the cm at.')
+        parser.add_argument('--tnr', 
+                            metavar='tnr',
+                            type=float,
+                            nargs='+',
+                            default=[0.95],
+                            help='A (list of) values to compute the tnr at.')        
         parser.add_argument('--priors',
                             action='store_true',
                             help='Include records used as prior knowledge '
@@ -182,6 +188,7 @@ class MetricsEntryPoint(BaseEntryPoint):
                                 wss=args.wss,
                                 erf=args.erf,
                                 cm=args.cm,
+                                tnr=args.tnr,
                                 priors=args.priors,
                                 x_absolute=args.x_absolute,
                                 y_absolute=args.y_absolute,

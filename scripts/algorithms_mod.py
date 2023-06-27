@@ -67,8 +67,7 @@ def _erf_values(labels, x_absolute=False, y_absolute=False):
     return x.tolist(), y.tolist()
 
 
-#updated tp_values
-def _tp_values(labels, x_screened, x_absolute=False):      
+def _tp_values(labels, x_screened=False, x_absolute=False):      
     n_pos_docs = sum(labels)
     tp = np.cumsum(labels, dtype=int) 
 
@@ -87,7 +86,7 @@ def _tp_values(labels, x_screened, x_absolute=False):
     return x.tolist(), y.tolist()
 
 
-def _fp_values(labels, x_screened, x_absolute=False):
+def _fp_values(labels, x_screened=False, x_absolute=False):
     
     n_pos_docs = sum(labels)
     n_docs = len(labels)
@@ -111,7 +110,7 @@ def _fp_values(labels, x_screened, x_absolute=False):
     return x.tolist(), y.tolist()
 
 
-def _tn_values(labels, x_screened, x_absolute=False):    
+def _tn_values(labels, x_screened=False, x_absolute=False):    
     n_pos_docs = sum(labels)
     n_docs = len(labels)
     tp = np.cumsum(labels, dtype=int)
@@ -134,7 +133,7 @@ def _tn_values(labels, x_screened, x_absolute=False):
 
     return x.tolist(), y.tolist()
 
-def _fn_values(labels, x_screened, x_absolute=False):
+def _fn_values(labels, x_screened=False, x_absolute=False):
     n_pos_docs = sum(labels)
     n_includes = int(sum(labels))
     tp = np.cumsum(labels, dtype=int)
@@ -153,5 +152,3 @@ def _fn_values(labels, x_screened, x_absolute=False):
         y = fn[when_found]
 
     return x.tolist(), y.tolist()
-
-
