@@ -150,10 +150,10 @@ Added imports:
 These functions return plots of the TP, FP, TN, FN values. If x_absolute is specified, the x axis is returned in absolute numbers. By default the x-axis is the fraction screened of the whole dataset.
 
 
-### _init_.py
+### `__init__.py`
 
 - Import: `plot_cm`
-- Added `'plot_cm'` to `_all__`
+- Added `'plot_cm'` to `_all_`
 
 ### entrypoint.py
 
