@@ -134,34 +134,6 @@ The TP, FP, TN, FN values and the TNR are added to the existing output files.
                 "title": "True positives are the number of relevant records found",
                 "value": [
                     [
-                        0.1,
-                        1
-                    ],
-                    [
-                        0.25,
-                        3
-                    ],
-                    [
-                        0.5,
-                        7
-                    ],
-                    [
-                        0.75,
-                        10
-                    ],
-                    [
-                        0.8,
-                        11
-                    ],
-                    [
-                        0.85,
-                        11
-                    ],
-                    [
-                        0.9,
-                        12
-                    ],
-                    [
                         0.95,
                         13
                     ],
@@ -175,34 +147,6 @@ The TP, FP, TN, FN values and the TNR are added to the existing output files.
                 "id": "fp",
                 "title": "False positives are the number of irrelevant records reviewed at recall level",
                 "value": [
-                    [
-                        0.1,
-                        0
-                    ],
-                    [
-                        0.25,
-                        2
-                    ],
-                    [
-                        0.5,
-                        11
-                    ],
-                    [
-                        0.75,
-                        20
-                    ],
-                    [
-                        0.8,
-                        20
-                    ],
-                    [
-                        0.85,
-                        20
-                    ],
-                    [
-                        0.9,
-                        36
-                    ],
                     [
                         0.95,
                         40
@@ -218,34 +162,6 @@ The TP, FP, TN, FN values and the TNR are added to the existing output files.
                 "title": "True negatives are the number of irrelevant records correctly not reviewed at recall level",
                 "value": [
                     [
-                        0.1,
-                        242
-                    ],
-                    [
-                        0.25,
-                        240
-                    ],
-                    [
-                        0.5,
-                        231
-                    ],
-                    [
-                        0.75,
-                        222
-                    ],
-                    [
-                        0.8,
-                        222
-                    ],
-                    [
-                        0.85,
-                        222
-                    ],
-                    [
-                        0.9,
-                        206
-                    ],
-                    [
                         0.95,
                         202
                     ],
@@ -260,34 +176,6 @@ The TP, FP, TN, FN values and the TNR are added to the existing output files.
                 "title": "False negatives are the number of relevant records not found at recall level",
                 "value": [
                     [
-                        0.1,
-                        13
-                    ],
-                    [
-                        0.25,
-                        11
-                    ],
-                    [
-                        0.5,
-                        7
-                    ],
-                    [
-                        0.75,
-                        4
-                    ],
-                    [
-                        0.8,
-                        3
-                    ],
-                    [
-                        0.85,
-                        3
-                    ],
-                    [
-                        0.9,
-                        2
-                    ],
-                    [
                         0.95,
                         1
                     ],
@@ -301,34 +189,6 @@ The TP, FP, TN, FN values and the TNR are added to the existing output files.
                 "id": "tnr",
                 "title": "True negative rate (Specificity)",
                 "value": [
-                    [
-                        0.1,
-                        1.0
-                    ],
-                    [
-                        0.25,
-                        0.991736
-                    ],
-                    [
-                        0.5,
-                        0.954545
-                    ],
-                    [
-                        0.75,
-                        0.917355
-                    ],
-                    [
-                        0.8,
-                        0.917355
-                    ],
-                    [
-                        0.85,
-                        0.917355
-                    ],
-                    [
-                        0.9,
-                        0.85124
-                    ],
                     [
                         0.95,
                         0.834711
