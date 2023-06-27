@@ -108,18 +108,18 @@ Added imports:
 
 Functions added:
 
-- tp(state_obj, intercept, priors=False, x_absolute=False)
-- _tp(labels, intercept, x_absolute=False)
-- fp(state_obj, intercept, priors=False, x_absolute=False)
-- _fp(labels, intercept, x_absolute=False)
-- tn(state_obj, intercept, priors=False, x_absolute=False)
-- _tn(labels, intercept, x_absolute=False)
-- fn(state_obj, intercept, priors=False, x_absolute=False)
-- _fn(labels, intercept, x_absolute=False)
+- `tp(state_obj, intercept, priors=False, x_absolute=False)`
+- `_tp(labels, intercept, x_absolute=False)`
+- `fp(state_obj, intercept, priors=False, x_absolute=False)`
+- `_fp(labels, intercept, x_absolute=False)`
+- `tn(state_obj, intercept, priors=False, x_absolute=False)`
+- `_tn(labels, intercept, x_absolute=False)`
+- `fn(state_obj, intercept, priors=False, x_absolute=False)`
+- `_fn(labels, intercept, x_absolute=False)`
 
 
-- tnr(state_obj, intercept, priors=False, x_absolute=False)
-- _tnr(labels, intercept, x_absolute=False)
+- `tnr(state_obj, intercept, priors=False, x_absolute=False)`
+- `_tnr(labels, intercept, x_absolute=False)`
 
 tp(), fp(), tn(), fn() are the main functions, which input a state object. They return values retrieved from the helper functions _tp(), _fp(), _tn(), _fn().
 The helper functions input lables and return the sliced values at a given intercept.
@@ -129,7 +129,7 @@ The _tnr() function uses the _tn_values() function to divide the true negatives 
 
 
 Functions modified: 
-- get_metrics()
+- `get_metrics()`
 
 Default intercepts at which values are to be outputed are specified. All sliced TP, FP, TN, FN values and TNR are added to the JSON ouput. 
 
@@ -139,8 +139,8 @@ Functions added:
 Added imports:
 -import: _tp_values, _fp_values, _tn_values, _fn_values
 
-- plot_cm(ax, state_obj, priors=False, x_screened=True, x_absolute=False)
-- _plot_cm(ax, labels, x_screened=True, x_absolute=False)
+- `plot_cm(ax, state_obj, priors=False, x_screened=True, x_absolute=False)`
+- `_plot_cm(ax, labels, x_screened=True, x_absolute=False)`
 
 These functions return plots of the TP, FP, TN, FN values. If x_absolute is specified, the x axis is returned in absolute numbers. By default the x-axis is the fraction screened of the whole dataset.
 
