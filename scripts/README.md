@@ -19,9 +19,10 @@ pip install insights==1.1.2
 
 ### Replace files in asreviewcontrib/insights
 
-After having installed ASReview find the asreviewcontrib folder.It is located in the site-packages folder within your Python installation folders. Click on the insights subfolder.
+After having installed ASReview find the asreviewcontrib folder. It is located in the site-packages folder within your Python installation folders. Click on the insights subfolder.
 
-Replace
+Replace:
+
 - _init_.py 
 - algorithms.py 
 - entrypoint.py
@@ -44,9 +45,9 @@ With modified scripts:
 ### Run simulations
 
 
-#### Create a main folder
+#### Create folders
 
-Create a main folder with a subfolder named 'data'. Place all 24 datasets in the data subfolder.
+Create a main folder with a subfolder named 'data'. Place all 24 synergy datasets in the data subfolder.
 
 
 #### CLI commands
@@ -57,9 +58,9 @@ In the command line cd to the main folder and run the command below to create th
 asreview makita template basic -f jobs.bat
 ```
 
-The Makita-basic template is specified in the command. It creates a folder structure for the output of the simulation and creates a jobs file for a default model (TF-IDF + NB) simualtion on all datasets.
+The Makita-basic template is specified in the command above. It creates a folder structure for the output of the simulation and creates a jobs file with default model (TF-IDF + NB) simualtion commands for all datasets.
 See [asreview/asreview-makita#templates](https://github.com/asreview/asreview-makita#templates) for template rules and formats.
-See [Simulation Mode Exercise](https://github.com/asreview/asreview-academy/blob/main/introducing-simulation-mode/README.md) for a detailed tutorial on running simulations with different templates the makita workflow generator. 
+See [Simulation Mode Exercise](https://github.com/asreview/asreview-academy/blob/main/introducing-simulation-mode/README.md) for a detailed tutorial on running simulations with the makita workflow generator (Make it automatic section). 
 
 
 #### Start simulation
@@ -73,12 +74,12 @@ Sit back until the simulation is completed and all files are present in subfolde
 
 [ASReview Insights](https://github.com/asreview/asreview-insights/tree/main/asreviewcontrib/insights) comprises the following files:
 
-- _init_.py*
-- algorithms.py* 
-- entrypoint.py*
-- metrics.py*
-- plot.py*
-- utils.py
+- `_init_.py`* package initialization
+- `algorithms.py`* retrieve values of metrics
+- `entrypoint.py`* entrypoint for CLI
+- `metrics.py`* returns sliced metrics at intercept in JSON file
+- `plot.py`* return plots of metrics
+- `utils.py`
 
 *were modified
 
@@ -86,10 +87,10 @@ Sit back until the simulation is completed and all files are present in subfolde
 ### Algorithms.py
 
 Functions added:
-- _tp_values(labels, x_screened, x_absolute=False)
-- _fp_values(labels, x_screened, x_absolute=False)
-- _tn_values(labels, x_screened, x_absolute=False)
-- _fn_values(labels, x_screened, x_absolute=False)
+- `_tp_values(labels, x_screened, x_absolute=False)`
+- `_fp_values(labels, x_screened, x_absolute=False)`
+- `_tn_values(labels, x_screened, x_absolute=False)`
+- `_fn_values(labels, x_screened, x_absolute=False)`
 
 
 The four functions above retrieve the TP, FP, TN, FN values of the labels in a state file. Each function takes labels as an input argument. Moreoever, the arguments x_screened and x_absolute can be specified. 
