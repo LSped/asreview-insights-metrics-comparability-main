@@ -17,10 +17,10 @@ To adjust WS@r% for class imbalance Kusa et al. (2023) propose to normalise the 
 
 ## Table of contents
 
-- `data` : data access
-- `scripts` : modified scripts
-- `output` : plots 
-- `Metrics-Implementation-Analysis` : TNR & WSS analysis
+- `data` data access
+- `scripts` modified scripts
+- `output` plots 
+- `Metrics-Implementation-Analysis` TNR & WSS analysis
 - `gitignore`
 - `LICENCE`
 - `README.md`
