@@ -315,7 +315,6 @@ This displays x-axis in absolute numbers (i.e., number of records screened).
 ### Example plot output
 
 
-
 ![Plot](https://github.com/LSped/asreview-insights-metrics-comparability-main/blob/main/output/cm_plot_sim_Donners_2021_0.png)
 
 ![Plot](https://github.com/LSped/asreview-insights-metrics-comparability-main/blob/main/output/cm_plot_sim_Donners_2021_0_absolute.png)
