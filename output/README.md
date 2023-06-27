@@ -38,7 +38,7 @@ asreview metrics YOUR_ASREVIEW_FILE.asreview --tnr 0.85
 ```
 
 
-## Example output
+## Example metrics output
 ```
 {
     "asreviewVersion": "1.2",
@@ -236,124 +236,6 @@ asreview metrics YOUR_ASREVIEW_FILE.asreview --tnr 0.85
 ### At different cm intercept
 
 ```
-{
-    "asreviewVersion": "1.2",
-    "apiVersion": "0+unknown",
-    "data": {
-        "items": [
-            {
-                "id": "recall",
-                "title": "Recall",
-                "value": [
-                    [
-                        0.1,
-                        0.6428571428571429
-                    ],
-                    [
-                        0.25,
-                        0.9285714285714286
-                    ],
-                    [
-                        0.5,
-                        0.9285714285714286
-                    ],
-                    [
-                        0.75,
-                        1.0
-                    ],
-                    [
-                        0.9,
-                        1.0
-                    ]
-                ]
-            },
-            {
-                "id": "wss",
-                "title": "Work Saved over Sampling",
-                "value": [
-                    [
-                        0.95,
-                        0.6875
-                    ]
-                ]
-            },
-            {
-                "id": "erf",
-                "title": "Extra Relevant record Found",
-                "value": [
-                    [
-                        0.1,
-                        0.5714285714285714
-                    ]
-                ]
-            },
-            {
-                "id": "atd",
-                "title": "Average Time to Discovery",
-                "value": 32.07142857142857
-            },
-            {
-                "id": "td",
-                "title": "Time to discovery",
-                "value": [
-                    [
-                        81,
-                        1
-                    ],
-                    [
-                        98,
-                        3
-                    ],
-                    [
-                        235,
-                        5
-                    ],
-                    [
-                        6,
-                        12
-                    ],
-                    [
-                        236,
-                        13
-                    ],
-                    [
-                        179,
-                        14
-                    ],
-                    [
-                        127,
-                        18
-                    ],
-                    [
-                        30,
-                        19
-                    ],
-                    [
-                        48,
-                        23
-                    ],
-                    [
-                        42,
-                        30
-                    ],
-                    [
-                        147,
-                        31
-                    ],
-                    [
-                        89,
-                        48
-                    ],
-                    [
-                        247,
-                        53
-                    ],
-                    [
-                        65,
-                        179
-                    ]
-                ]
-            },
             {
                 "id": "tp",
                 "title": "True Positives",
@@ -393,26 +275,12 @@ asreview metrics YOUR_ASREVIEW_FILE.asreview --tnr 0.85
                         3
                     ]
                 ]
-            },
-            {
-                "id": "tnr",
-                "title": "True Negative Rate (Specificity)",
-                "value": [
-                    [
-                        0.95,
-                        0.834711
-                    ]
-                ]
             }
-        ]
-    }
-}
 ```
 
 ### At different tnr intercept
 
-```
-  {
+ 	    {
                 "id": "tnr",
                 "title": "True Negative Rate (Specificity)",
                 "value": [
@@ -422,9 +290,7 @@ asreview metrics YOUR_ASREVIEW_FILE.asreview --tnr 0.85
                     ]
                 ]
             }
-        ]
-    }
-}
+        
 ```
 
 
@@ -446,12 +312,17 @@ asreview plot cm YOUR_ASREVIEW_FILE.asreview --x_absolute
 This displays x-axis in absolute numbers (i.e., number of records screened).
 
 
-### Example output
+### Example plot output
+
+
+![plot cm]https://github.com/LSped/asreview-insights-metrics-comparability-main/blob/main/output/cm_plot_sim_Donners_2021_0.png)
+
+![plot cm absolute](https://github.com/LSped/asreview-insights-metrics-comparability-main/blob/main/output/cm_plot_sim_Donners_2021_0_absolute.png)
 
 
 
 
-
+## Makita Folder structure
 ## Data
 
 The performance on the following datasets is evaluated:
