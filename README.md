@@ -11,10 +11,14 @@ The goal of this project was to enhance the ASReview Insights Extension by addin
 - A first step invovled calculating and outputting the confusion matrix values (TP, FP, TN, FN), which underlie most evaluation metrics. 
 - Then, the True Negative Rate at recall (TNR@r%) is added to Insights. 
 
+### Output
+
+See output folder.
+
 ### Background
 
 
-#### Confusion maxtrix
+#### Confusion matrix
 
 Confusion matrix values consist of True Positives (TP), False Positives (FP), True Negatives (TN), and False Negatives (FN). Most metrics (e.g., precision, False Positive Rate, F score) can be calculated from these values. See [O'Mara-Eves et al. (2015)](https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/2046-4053-4-5) for a comprehensive overview of metrics. Similarly, various plots can be created from these values (e.g., ROC curve, recall vs precision)
 
@@ -59,8 +63,8 @@ Illustrating example at 95% recall:
 ## Table of contents
 
 - `data` data access
-- `scripts` modified scripts
-- `output` plots 
+- `scripts` modified scripts + explanations in readme
+- `output` new metric JSON files, new cm plots 
 - `Metrics-Implementation-Analysis` TNR & WSS analysis
 - `gitignore`
 - `LICENCE`
@@ -81,7 +85,7 @@ See README in scripts folder.
 
 ### 3. Run simulations
 
-See instructions files in scripts folder.
+See README in scripts folder.
 
 ### 4. Jupyter Notebook
 
