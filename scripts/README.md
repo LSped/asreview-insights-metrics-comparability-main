@@ -103,7 +103,7 @@ If x_screened is not specified, the function returns the respective TP, FP, TN o
 ### metrics.py
 
 Added imports:
-- import: `_tp_values, _fp_values, _tn_values, _fn_values`
+- import `_tp_values, _fp_values, _tn_values, _fn_values`
 
 
 Functions added:
@@ -139,11 +139,10 @@ All sliced TP, FP, TN, FN values and TNR are added to the JSON ouput.
 
 ### plot.py
 
+Added imports
+- import `_tp_values, _fp_values, _tn_values, _fn_values`
+
 Functions added:
-
-Added imports:
--import: `_tp_values, _fp_values, _tn_values, _fn_values`
-
 - `plot_cm(ax, state_obj, priors=False, x_screened=True, x_absolute=False)`
 - `_plot_cm(ax, labels, x_screened=True, x_absolute=False)`
 
