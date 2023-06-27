@@ -3,11 +3,349 @@
 
 ## Files
 
-- metrics_sim_*Dataset_`x`.json   (metrics JSON)
+- metrics_sim_*Dataset_x.json
 - data_metrics.csv
 - data_metrics.xlsx
 
 The TP, FP, TN, FN values and the TNR are added to the existing output files.
+
+## Example output
+```
+{
+    "asreviewVersion": "1.2",
+    "apiVersion": "1.1.2",
+    "data": {
+        "items": [
+            {
+                "id": "recall",
+                "title": "Recall",
+                "value": [
+                    [
+                        0.1,
+                        0.6428571428571429
+                    ],
+                    [
+                        0.25,
+                        0.9285714285714286
+                    ],
+                    [
+                        0.5,
+                        0.9285714285714286
+                    ],
+                    [
+                        0.75,
+                        1.0
+                    ],
+                    [
+                        0.9,
+                        1.0
+                    ]
+                ]
+            },
+            {
+                "id": "wss",
+                "title": "Work Saved over Sampling",
+                "value": [
+                    [
+                        0.95,
+                        0.6875
+                    ]
+                ]
+            },
+            {
+                "id": "erf",
+                "title": "Extra Relevant record Found",
+                "value": [
+                    [
+                        0.1,
+                        0.5714285714285714
+                    ]
+                ]
+            },
+            {
+                "id": "atd",
+                "title": "Average time to discovery",
+                "value": 32.07142857142857
+            },
+            {
+                "id": "td",
+                "title": "Time to discovery",
+                "value": [
+                    [
+                        81,
+                        1
+                    ],
+                    [
+                        98,
+                        3
+                    ],
+                    [
+                        235,
+                        5
+                    ],
+                    [
+                        6,
+                        12
+                    ],
+                    [
+                        236,
+                        13
+                    ],
+                    [
+                        179,
+                        14
+                    ],
+                    [
+                        127,
+                        18
+                    ],
+                    [
+                        30,
+                        19
+                    ],
+                    [
+                        48,
+                        23
+                    ],
+                    [
+                        42,
+                        30
+                    ],
+                    [
+                        147,
+                        31
+                    ],
+                    [
+                        89,
+                        48
+                    ],
+                    [
+                        247,
+                        53
+                    ],
+                    [
+                        65,
+                        179
+                    ]
+                ]
+            },
+            {
+                "id": "tp",
+                "title": "True positives are the number of relevant records found",
+                "value": [
+                    [
+                        0.1,
+                        1
+                    ],
+                    [
+                        0.25,
+                        3
+                    ],
+                    [
+                        0.5,
+                        7
+                    ],
+                    [
+                        0.75,
+                        10
+                    ],
+                    [
+                        0.8,
+                        11
+                    ],
+                    [
+                        0.85,
+                        11
+                    ],
+                    [
+                        0.9,
+                        12
+                    ],
+                    [
+                        0.95,
+                        13
+                    ],
+                    [
+                        1,
+                        14
+                    ]
+                ]
+            },
+            {
+                "id": "fp",
+                "title": "False positives are the number of irrelevant records reviewed at recall level",
+                "value": [
+                    [
+                        0.1,
+                        0
+                    ],
+                    [
+                        0.25,
+                        2
+                    ],
+                    [
+                        0.5,
+                        11
+                    ],
+                    [
+                        0.75,
+                        20
+                    ],
+                    [
+                        0.8,
+                        20
+                    ],
+                    [
+                        0.85,
+                        20
+                    ],
+                    [
+                        0.9,
+                        36
+                    ],
+                    [
+                        0.95,
+                        40
+                    ],
+                    [
+                        1,
+                        165
+                    ]
+                ]
+            },
+            {
+                "id": "tn",
+                "title": "True negatives are the number of irrelevant records correctly not reviewed at recall level",
+                "value": [
+                    [
+                        0.1,
+                        242
+                    ],
+                    [
+                        0.25,
+                        240
+                    ],
+                    [
+                        0.5,
+                        231
+                    ],
+                    [
+                        0.75,
+                        222
+                    ],
+                    [
+                        0.8,
+                        222
+                    ],
+                    [
+                        0.85,
+                        222
+                    ],
+                    [
+                        0.9,
+                        206
+                    ],
+                    [
+                        0.95,
+                        202
+                    ],
+                    [
+                        1,
+                        77
+                    ]
+                ]
+            },
+            {
+                "id": "fn",
+                "title": "False negatives are the number of relevant records not found at recall level",
+                "value": [
+                    [
+                        0.1,
+                        13
+                    ],
+                    [
+                        0.25,
+                        11
+                    ],
+                    [
+                        0.5,
+                        7
+                    ],
+                    [
+                        0.75,
+                        4
+                    ],
+                    [
+                        0.8,
+                        3
+                    ],
+                    [
+                        0.85,
+                        3
+                    ],
+                    [
+                        0.9,
+                        2
+                    ],
+                    [
+                        0.95,
+                        1
+                    ],
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            },
+            {
+                "id": "tnr",
+                "title": "True negative rate (Specificity)",
+                "value": [
+                    [
+                        0.1,
+                        1.0
+                    ],
+                    [
+                        0.25,
+                        0.991736
+                    ],
+                    [
+                        0.5,
+                        0.954545
+                    ],
+                    [
+                        0.75,
+                        0.917355
+                    ],
+                    [
+                        0.8,
+                        0.917355
+                    ],
+                    [
+                        0.85,
+                        0.917355
+                    ],
+                    [
+                        0.9,
+                        0.85124
+                    ],
+                    [
+                        0.95,
+                        0.834711
+                    ],
+                    [
+                        1,
+                        0.318182
+                    ]
+                ]
+            }
+        ]
+    }
+}
+```
+
+
+
 
 ## Plots
 
@@ -17,13 +355,13 @@ A new plot is outputted, which can be displayed by running the command below in 
 ```
 asreview plot cm YOUR_ASREVIEW_FILE.asreview
 ```
-Returns the confusion matrix plot with x-axis as fraction screened of whole dataset.
+This displays the confusion matrix plot with x-axis as fraction screened of whole dataset.
 
 ```
 asreview plot cm YOUR_ASREVIEW_FILE.asreview --x_absolute
 ```
 
-Returns x-axis in absolute numbers (i.e., number of records screened).
+This displays x-axis in absolute numbers (i.e., number of records screened).
 
 
 
