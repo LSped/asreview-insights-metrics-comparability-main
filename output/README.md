@@ -3,7 +3,7 @@
 
 ## Files
 
-- metrics_sim_*Dataset_x.json
+- metrics_sim_*dataset_x.json
 - data_metrics.csv
 - data_metrics.xlsx
 
@@ -204,6 +204,30 @@ The TP, FP, TN, FN values and the TNR are added to the existing output files.
 }
 ```
 
+### Access 
+
+#### Folder
+The JSON metrics output above can be accessed in the folder structure: output/simulation/dataset/metrics/metrics_sim_dataset_x.json
+
+The EXCEL/CSV metrics output above can be accessed in the folder structure: output/tables/data_metrics.csv
+Here the metrics for all datasets are shown.
+
+### Command line
+
+```
+asreview metrics YOUR_ASREVIEW_FILE.asreview
+```
+
+Intercepts can be specified as seen below:
+
+```
+asreview metrics YOUR_ASREVIEW_FILE.asreview --cm 0.85
+```
+
+
+```
+asreview metrics YOUR_ASREVIEW_FILE.asreview --tnr 0.85
+```
 
 
 
