@@ -151,8 +151,8 @@ These functions return plots of the TP, FP, TN, FN values. If x_absolute is spec
 
 ### _init_.py
 
-Import: `plot_cm`
-Added `'plot_cm'` to `_all__`
+- Import: `plot_cm`
+- Added `'plot_cm'` to `_all__`
 
 ### entrypoint.py
 
