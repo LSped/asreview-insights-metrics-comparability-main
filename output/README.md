@@ -9,6 +9,35 @@
 
 The TP, FP, TN, FN values and the TNR are added to the existing output files.
 
+
+### Access 
+
+#### Folder
+The JSON metrics output above can be accessed in the folder structure: output/simulation/dataset/metrics/metrics_sim_dataset_x.json
+
+The metrics output above can be accessed in EXCEL/CSV format in the folder structure: output/tables/data_metrics.csv
+Here the metrics for all datasets are shown.
+
+### Command line
+ 
+The `metrics` subcommand computes the metrics and displays them in the command line.
+
+```
+asreview metrics YOUR_ASREVIEW_FILE.asreview
+```
+
+Intercepts can be specified as seen below:
+
+```
+asreview metrics YOUR_ASREVIEW_FILE.asreview --cm 0.85
+```
+
+
+```
+asreview metrics YOUR_ASREVIEW_FILE.asreview --tnr 0.85
+```
+
+
 ## Example output
 ```
 {
@@ -204,29 +233,198 @@ The TP, FP, TN, FN values and the TNR are added to the existing output files.
 }
 ```
 
-### Access 
-
-#### Folder
-The JSON metrics output above can be accessed in the folder structure: output/simulation/dataset/metrics/metrics_sim_dataset_x.json
-
-The EXCEL/CSV metrics output above can be accessed in the folder structure: output/tables/data_metrics.csv
-Here the metrics for all datasets are shown.
-
-### Command line
+### At different cm intercept
 
 ```
-asreview metrics YOUR_ASREVIEW_FILE.asreview
+{
+    "asreviewVersion": "1.2",
+    "apiVersion": "0+unknown",
+    "data": {
+        "items": [
+            {
+                "id": "recall",
+                "title": "Recall",
+                "value": [
+                    [
+                        0.1,
+                        0.6428571428571429
+                    ],
+                    [
+                        0.25,
+                        0.9285714285714286
+                    ],
+                    [
+                        0.5,
+                        0.9285714285714286
+                    ],
+                    [
+                        0.75,
+                        1.0
+                    ],
+                    [
+                        0.9,
+                        1.0
+                    ]
+                ]
+            },
+            {
+                "id": "wss",
+                "title": "Work Saved over Sampling",
+                "value": [
+                    [
+                        0.95,
+                        0.6875
+                    ]
+                ]
+            },
+            {
+                "id": "erf",
+                "title": "Extra Relevant record Found",
+                "value": [
+                    [
+                        0.1,
+                        0.5714285714285714
+                    ]
+                ]
+            },
+            {
+                "id": "atd",
+                "title": "Average Time to Discovery",
+                "value": 32.07142857142857
+            },
+            {
+                "id": "td",
+                "title": "Time to discovery",
+                "value": [
+                    [
+                        81,
+                        1
+                    ],
+                    [
+                        98,
+                        3
+                    ],
+                    [
+                        235,
+                        5
+                    ],
+                    [
+                        6,
+                        12
+                    ],
+                    [
+                        236,
+                        13
+                    ],
+                    [
+                        179,
+                        14
+                    ],
+                    [
+                        127,
+                        18
+                    ],
+                    [
+                        30,
+                        19
+                    ],
+                    [
+                        48,
+                        23
+                    ],
+                    [
+                        42,
+                        30
+                    ],
+                    [
+                        147,
+                        31
+                    ],
+                    [
+                        89,
+                        48
+                    ],
+                    [
+                        247,
+                        53
+                    ],
+                    [
+                        65,
+                        179
+                    ]
+                ]
+            },
+            {
+                "id": "tp",
+                "title": "True Positives",
+                "value": [
+                    [
+                        0.85,
+                        11
+                    ]
+                ]
+            },
+            {
+                "id": "fp",
+                "title": "False Positives",
+                "value": [
+                    [
+                        0.85,
+                        20
+                    ]
+                ]
+            },
+            {
+                "id": "tn",
+                "title": "True Negatives",
+                "value": [
+                    [
+                        0.85,
+                        222
+                    ]
+                ]
+            },
+            {
+                "id": "fn",
+                "title": "False Negatives",
+                "value": [
+                    [
+                        0.85,
+                        3
+                    ]
+                ]
+            },
+            {
+                "id": "tnr",
+                "title": "True Negative Rate (Specificity)",
+                "value": [
+                    [
+                        0.95,
+                        0.834711
+                    ]
+                ]
+            }
+        ]
+    }
+}
 ```
 
-Intercepts can be specified as seen below:
+### At different tnr intercept
 
 ```
-asreview metrics YOUR_ASREVIEW_FILE.asreview --cm 0.85
-```
-
-
-```
-asreview metrics YOUR_ASREVIEW_FILE.asreview --tnr 0.85
+  {
+                "id": "tnr",
+                "title": "True Negative Rate (Specificity)",
+                "value": [
+                    [
+                        0.85,
+                        0.917355
+                    ]
+                ]
+            }
+        ]
+    }
+}
 ```
 
 
@@ -234,7 +432,7 @@ asreview metrics YOUR_ASREVIEW_FILE.asreview --tnr 0.85
 ## Plots
 
 
-A new plot is outputted, which can be displayed by running the command below in the command line: 
+A new plot is outputed, which can be displayed by running the command below in the command line: 
 
 ```
 asreview plot cm YOUR_ASREVIEW_FILE.asreview
@@ -246,6 +444,10 @@ asreview plot cm YOUR_ASREVIEW_FILE.asreview --x_absolute
 ```
 
 This displays x-axis in absolute numbers (i.e., number of records screened).
+
+
+### Example output
+
 
 
 
