@@ -14,6 +14,19 @@ The TNR@r% was chosen since it addresses a drawback of the commonly used WSS@r% 
 The maximum value of the WSS@r% metric depends on the class imbalance (% of relevant records) in a given datset. If one wants to compare performance accross datasets adjusting for imbalance isolates influence of other data characteristics on performance.
 To adjust WS@r% for class imbalance Kusa et al. (2023) propose to normalise the WSS (nWSS). After factorization, the nWSS@r% is found to be equal as the TNR@r%.
 
+
+## Table of contents
+
+- data - : data access
+- scripts - : modified scripts
+- output - : plots 
+- Analysis - : TNR & WSS analysis
+- gitignore -
+- LICENCE -
+- README.md -
+
+
+
 ## How to reproduce the project
 
 ### 1. Access data
@@ -34,16 +47,9 @@ See instructions and jobs.bat files in scripts folder.
 Open notebook, specifiy path to output/tables/data_metrics.csv, which is used for further analysis.
 
 
-## Table of contents
+####Contact 
 
-- data - : data access
-- scripts - : modified scripts
-- output - : plots 
-- Analysis - : TNR & WSS analysis
-- gitignore -
-- LICENCE -
-- README.md -
-
+[Email](l.m.s.spedener@students.uu.nl)
 
 
  
