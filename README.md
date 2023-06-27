@@ -40,7 +40,7 @@ See README in scripts folder.
 
 ### 3. Run simulations
 
-See instructions and jobs.bat files in scripts folder.
+See instructions files in scripts folder.
 
 ### 4. Jupyter Notebook
 
@@ -49,7 +49,7 @@ Open notebook, specifiy path to output/tables/data_metrics.csv, which is used fo
 
 #### Contact 
 
-[Email](l.m.s.spedener@students.uu.nl)
+[Email]
 
 
  
