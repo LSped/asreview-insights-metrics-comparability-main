@@ -10,7 +10,7 @@ The goal of this project was to enhance the ASReview Insights Extension by addin
 ### Implementation 
 - A first step invovled calculating and outputting the confusion matrix values (TP, FP, TN, FN), which underlie most evaluation metrics. 
 - Then, the True Negative Rate at recall (TNR@r%) is added to Insights. 
-
+See scripts folder.
 ### Output
 
 See output folder.
