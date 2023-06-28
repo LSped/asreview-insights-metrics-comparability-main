@@ -1,5 +1,5 @@
 
-# Enhancing ASReview Insights with new metric focusing on comparability
+# Enhancing ASReview Insights with New Metric Focusing on Comparability
 ###
 
 
