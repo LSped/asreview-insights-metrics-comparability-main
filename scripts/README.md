@@ -87,10 +87,10 @@ Sit back until the simulation is completed and all files are present in subfolde
 ### algorithms.py
 
 Functions added:
-- `_tp_values(labels, x_screened, x_absolute=False)`
-- `_fp_values(labels, x_screened, x_absolute=False)`
-- `_tn_values(labels, x_screened, x_absolute=False)`
-- `_fn_values(labels, x_screened, x_absolute=False)`
+- `_tp_values(labels, x_screened=False, x_absolute=False)`
+- `_fp_values(labels, x_screened=False, x_absolute=False)`
+- `_tn_values(labels, x_screened=False, x_absolute=False)`
+- `_fn_values(labels, x_screened=False, x_absolute=False)`
 
 
 The four functions above retrieve the TP, FP, TN, FN values of the labels in a state file. Each function takes labels as an input argument. Moreoever, the arguments x_screened and x_absolute can be specified. 
