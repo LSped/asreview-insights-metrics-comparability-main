@@ -1,7 +1,7 @@
 
 # Output
-See main README for steps on accessing the new output. 
+See main README for steps to get to the new output yourself. 
 
-In this folder, find metrics JSON files and plots of 24 synergy datasets.
+In this folder, find the 'New Output' jupyter notebook, with new metrics and plots on 24 synergy datasets.
 
 
