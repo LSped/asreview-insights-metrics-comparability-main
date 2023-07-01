@@ -422,7 +422,7 @@ A new plot can now be outputed, which can be displayed by running the command be
 ```
 asreview plot cm YOUR_ASREVIEW_FILE.asreview
 ```
-This displays the confusion matrix plot with x-axis as fraction screened of whole dataset.
+This displays the confusion matrix plot with the x-axis as the fraction screened of whole dataset.
 
 ```
 asreview plot cm YOUR_ASREVIEW_FILE.asreview --x_absolute
@@ -441,7 +441,7 @@ This displays x-axis in absolute numbers (i.e., number of records screened).
 
 
 
-### Output
+### All 24 datasets output
 
 Too see all the output files, see the Jupyter Notebook in the [output folder](https://github.com/LSped/asreview-insights-metrics-comparability-main/tree/main/output).
 
@@ -459,20 +459,26 @@ See README in data folder.
 
 ### 2. Install software and packages
 
-See README in scripts folder.
+See README.
 
 ### 3. Run simulations
 
-See README in scripts folder.
+See README.
 
 ### 4. Jupyter Notebook
 
+See Analysis folder.
 Open notebook, specifiy path to output/tables/data_metrics.csv, which is used for further analysis.
 
 
-#### Contact 
+## License
 
-[Email]
+The project is licensed under the MIT License.
+
+
+## Contact
+For suggestions, questions, or comments, please file an issue in the issue tracker.
+
 
 
  
