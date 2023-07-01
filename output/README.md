@@ -8,8 +8,8 @@ See main README for steps on accessing the new output.
 
 
 
-### Makita Folder structure
-#### Data
+#### Makita Folder structure
+##### Data
 See organization of the makita folder structure below. 
 The performance on the following datasets was evaluated:
 
