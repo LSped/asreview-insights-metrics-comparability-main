@@ -17,6 +17,8 @@ The goal of this project was to enhance the [ASReview Insights Extension](https:
 - `LICENCE`
 - `README.md`
 
+
+
 ## New Features
 
 Already Available in [ASReview Insights](https://github.com/asreview/asreview-insights): 
@@ -28,14 +30,25 @@ Not yet available in ASReview Insights:
 - Confusion matrix plot 
 
 
-## Ouput
+### Background
+
+#### Confusion matrix
+
+See [ASReview Insights](https://github.com/asreview/asreview-insights) for a definition of the confusion matrix in the active learning (AL) context.
+
+#### Specificity / True Negative Rate (TNR) 
+
+See [ASReview Insights](https://github.com/asreview/asreview-insights) for the definition and rationale of implementation.
+
+
+## Get to the Ouput
 
 To see the new output a simulation with the modified script needs to be run. 
 
 
-## How to run the modified scripts
+### How to run the modified scripts
 
-### Install ASReview (v1.2), Makita (0.6.3), and Insights (1.1.2)
+#### Installation
 
 ```
 pip install asreview==1.2
@@ -50,7 +63,7 @@ pip install insights==1.1.2
 ```
 
 
-### Replace files in asreviewcontrib/insights
+#### Replace files in asreviewcontrib/insights
 
 After having installed ASReview find the asreviewcontrib folder. It is located in the site-packages folder within your Python installation folders. Click on the insights subfolder.
 
@@ -83,30 +96,30 @@ With modified scripts (available in scripts folder):
 
 Create a main folder with a subfolder named 'data'. Place all 24 synergy datasets in the data subfolder.
 
+See [data folder](https://github.com/LSped/asreview-insights-metrics-comparability-main/tree/main/data) to download input data.
 
-#### CLI commands
-
-In the command line cd to the main folder and run the command below to create the jobs file: 
+#### CLI commands (on Windows)
+See [Simulation Mode Exercise](https://github.com/asreview/asreview-academy/blob/main/introducing-simulation-mode/README.md) for a detailed tutorial on running simulations with the makita workflow generator (Make it automatic section) (Windows + Mac). 
+ 
+In the command line cd to the main folder and run the command below on Windows to create the jobs file: 
 
 ```
 asreview makita template basic -f jobs.bat
 ```
 
-The Makita-basic template is specified in the command above. It creates a folder structure for the output of the simulation and creates a jobs file with default model (TF-IDF + NB) simualtion commands for all datasets.
+ASReview Makita creates a folder structure to store the output files of the simulation. Specifying the Makita-basic template also creates a jobs file with basic model (naïve Bayes (NB) + TF-IDF) simualtion commands for all datasets.
 See [asreview/asreview-makita#templates](https://github.com/asreview/asreview-makita#templates) for template rules and formats.
-See [Simulation Mode Exercise](https://github.com/asreview/asreview-academy/blob/main/introducing-simulation-mode/README.md) for a detailed tutorial on running simulations with the makita workflow generator (Make it automatic section). 
 
 
 #### Start simulation
 
-In the main folder click on the generated jobs file which includes all simulation commands to start the simulations. 
+In the main folder click on the generated jobs file which includes all simulation commands to start the simulations (Windows). 
 Sit back until the simulation is completed and all files are present in subfolders of the main folder.
 
 
 
-
-
-The TP, FP, TN, FN and the TNR are added to the existing metrics output files.
+## Output
+When the simulation is over you can find the TP, FP, TN, FN and the TNR in the metrics output files.
 
 - `metrics_sim_*dataset_x.json`
 - `data_metrics.csv`
@@ -118,7 +131,7 @@ The TP, FP, TN, FN and the TNR are added to the existing metrics output files.
 
 #### Folder
 The JSON metrics output (metrics_sim_*dataset_x.json) can be accessed in the makita folder structure: output/simulation/dataset/metrics/metrics_sim_dataset_x.json
-The excel/csv metrics output can be accessed in the folder structure: output/tables/data_metrics.csv
+The excel/csv metrics output can be accessed in the makita folder structure: output/tables/data_metrics.csv ; output/tables/data_metrics.csv
 Note, in the excel and csv the metrics are shown for all datasets (in the data folder).
 
 ### Command line
@@ -402,7 +415,7 @@ asreview metrics YOUR_ASREVIEW_FILE.asreview --tnr 0.85
 ## Plots
 
 
-A new plot is outputed, which can be displayed by running the command below in the command line: 
+A new plot can now be outputed, which can be displayed by running the command below in the command line: 
 
 ```
 asreview plot cm YOUR_ASREVIEW_FILE.asreview
@@ -426,64 +439,9 @@ This displays x-axis in absolute numbers (i.e., number of records screened).
 
 
 
-
-
-## How to run the modified scripts
-
-### Install ASReview (v1.2), Makita (0.6.3), Insights (1.1.2)
-
-```
-pip install asreview==1.2
-```
-
-```
-pip install makita==0.6.3
-```
-
-```
-pip install insights==1.1.2
-```
-
-
-### Replace files in asreviewcontrib/insights
-
-After having installed ASReview find the asreviewcontrib folder. It is located in the site-packages folder within your Python installation folders. Click on the insights subfolder.
-
-Replace:
-
-- _init_.py 
-- algorithms.py 
-- entrypoint.py
-- metrics.py
-- plot.py
-- utils.py
-
-With modified scripts:
-
-- __init__mod.py 
-- algorithms_mod.py 
-- entrypoint_mod.py
-- metrics_mod.py
-- plot_mod.py
-- utils.py
-
-(Note utils.py remains unchanged)
-
-
 ### Output
 
-See output folder.
-
-### Background
-
-
-#### Confusion matrix
-
-See [ASReview Insights](https://github.com/asreview/asreview-insights) for a definition of the confusion matrix in the active learning (AL) context.
-
-#### Specificity / True Negative Rate (TNR) 
-
-See [ASReview Insights](https://github.com/asreview/asreview-insights) for the definition and rationale of implementation.
+Too see all the output files, see the Jupyter Notebook in the [output folder](https://github.com/LSped/asreview-insights-metrics-comparability-main/tree/main/output).
 
 
 
