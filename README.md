@@ -450,7 +450,7 @@ Too see all the output files, see the Jupyter Notebook in the [output folder](ht
 ## Analysis WSS@r% and TNR@r%
 
 Spearman correlations were computed to evaluate the assocations between class imbalance, WSS@95%, and TNR@95%.
-
+See Analysis Notebook in [postprocessing](https://github.com/LSped/asreview-insights-metrics-comparability-main/tree/main/postprocessing) folder.
 
 
 ## How to reproduce the project
@@ -458,7 +458,6 @@ Spearman correlations were computed to evaluate the assocations between class im
 ### 1. Access data
 
 See README in data folder.
-
 
 ### 2. Install software and packages
 
@@ -470,9 +469,7 @@ See README.
 
 ### 4. Jupyter Notebook
 
-See Analysis folder.
-Open notebook, specifiy path to output/tables/data_metrics.csv, which is used for further analysis.
-
+See postprocessing folder.
 
 ## License
 
