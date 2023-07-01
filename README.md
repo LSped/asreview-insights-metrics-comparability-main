@@ -5,11 +5,11 @@
 
 
 ## Description
-<<<<<<< Updated upstream
+
 The goal of this project was to enhance the ASReview Insights Extension by adding the confusion matrix, which underlies most metrics, and by adding a new metric promoting comparability: TNR@r%.
-=======
+
 The goal of this project was to enhance the [ASReview Insights Extension](https://github.com/asreview/asreview-insights) by adding the confusion matrix, which underlies most metrics, and by adding a new metric promoting comparability.
->>>>>>> Stashed changes
+
 
 ## Table of contents
 
