@@ -94,11 +94,11 @@ With modified scripts (available in [scripts folder](https://github.com/LSped/as
 See [Simulation Mode Exercise](https://github.com/asreview/asreview-academy/blob/main/introducing-simulation-mode/README.md) for a detailed tutorial on running simulations with the makita workflow generator (Make it automatic section) (Windows + Mac). 
  
 
-#### Create folders
+#### Step 1: Create folders
 
 Create a main folder with a subfolder named 'data'. Place all 24 synergy datasets in the data subfolder. See [data folder](https://github.com/LSped/asreview-insights-metrics-comparability-main/tree/main/data) to download input data.
 
-#### CLI commands (on Windows)
+#### Step 2: CLI commands (on Windows)
 
 In the command line cd to the main folder and run the command below on Windows to create the jobs file: 
 
@@ -110,7 +110,7 @@ ASReview Makita creates a folder structure to store the output files of the simu
 See [asreview/asreview-makita#templates](https://github.com/asreview/asreview-makita#templates) for template rules and formats.
 
 
-#### Start simulation
+#### Step 3: Start simulation
 
 In the main folder click on the generated jobs file which includes all simulation commands to start the simulations (Windows). 
 Sit back until the simulation is completed and all files are present in subfolders of the main folder.
