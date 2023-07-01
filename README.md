@@ -17,7 +17,15 @@ The goal of this project was to enhance the [ASReview Insights Extension](https:
 - `LICENCE`
 - `README.md`
 
+### Background
 
+#### Confusion matrix
+
+See [ASReview Insights](https://github.com/asreview/asreview-insights) for a definition of the confusion matrix in the active learning (AL) context.
+
+#### Specificity / True Negative Rate (TNR) 
+
+See [ASReview Insights](https://github.com/asreview/asreview-insights) for the definition and rationale of implementation.
 
 ## New Features
 
@@ -28,17 +36,6 @@ Already Available in [ASReview Insights](https://github.com/asreview/asreview-in
 Not yet available in ASReview Insights: 
 - Confusion matrix (TP, FP, TN, FN) @records screened
 - Confusion matrix plot 
-
-
-### Background
-
-#### Confusion matrix
-
-See [ASReview Insights](https://github.com/asreview/asreview-insights) for a definition of the confusion matrix in the active learning (AL) context.
-
-#### Specificity / True Negative Rate (TNR) 
-
-See [ASReview Insights](https://github.com/asreview/asreview-insights) for the definition and rationale of implementation.
 
 
 ## Get to the Ouput
