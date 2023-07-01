@@ -17,7 +17,7 @@ The goal of this project was to enhance the [ASReview Insights Extension](https:
 - `LICENCE`
 - `README.md`
 
-### New Features
+## New Features
 
 Already Available in [ASReview Insights](https://github.com/asreview/asreview-insights): 
 - Confusion matrix (TP, FP, TN, FN) @recall 
@@ -28,7 +28,7 @@ Not yet available in ASReview Insights:
 - Confusion matrix plot 
 
 
-### Ouput
+## Ouput
 
 The TP, FP, TN, FN and the TNR are added to the existing output files.
 
