@@ -87,7 +87,7 @@ With modified scripts (available in [scripts folder](https://github.com/LSped/as
 
 (Note utils.py remains unchanged)
 
-
+See [scripts](https://github.com/LSped/asreview-insights-metrics-comparability-main/tree/main/scripts) folder, for detailed explanations on modified scripts.
 
 ### Run simulations
 
@@ -449,7 +449,7 @@ Too see all the output files, see the Jupyter Notebook in the [output folder](ht
 
 ## Analysis WSS@r% and TNR@r%
 
-Spearman correlations were computed to evaluate the associations between class imbalance, WSS@95%, and TNR@95%.
+Spearman correlations were computed to evaluate the assocations between class imbalance, WSS@95%, and TNR@95%.
 See Analysis Notebook in [postprocessing](https://github.com/LSped/asreview-insights-metrics-comparability-main/tree/main/postprocessing) folder.
 
 
@@ -467,11 +467,9 @@ See README.
 
 See README.
 
-### 4. Output
-See README and ouput folder.
+### 4. Jupyter Notebook
 
-### 5. Analysis
-See README and postprocessing folder.
+See postprocessing folder.
 
 ## License
 
