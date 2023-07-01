@@ -13,9 +13,9 @@ The goal of this project was to enhance the [ASReview Insights Extension](https:
 - `scripts` modified scripts with explanations 
 - `output` confusion matrix (metrics + plot), tnr (metrics) for 24 datasets
 - `analysis` jupyter notebook with statistical analysis of WSS@r & TNR@r 
-- `gitignore`
-- `LICENCE`
-- `README.md`
+- `gitignore` contains the list of files, which are ignored by git
+- `LICENCE` contains license of this repository
+- `README.md` contains the feature descriptions, installation instructions, simulation set up, output access
 
 ### Background
 
@@ -25,7 +25,7 @@ See [ASReview Insights](https://github.com/asreview/asreview-insights) for a def
 
 #### Specificity / True Negative Rate (TNR) 
 
-See [ASReview Insights](https://github.com/asreview/asreview-insights) for the definition and rationale of implementation.
+See [ASReview Insights](https://github.com/asreview/asreview-insights) for the definition and rationale of implementation of TNR@r%.
 
 ## New Features
 
@@ -43,7 +43,7 @@ Not yet available in ASReview Insights:
 To see the new output a simulation with the modified script needs to be run. 
 
 
-### How to run the modified scripts
+### Run the modified scripts
 
 #### Installation
 
@@ -98,7 +98,7 @@ See [data folder](https://github.com/LSped/asreview-insights-metrics-comparabili
 #### CLI commands (on Windows)
 See [Simulation Mode Exercise](https://github.com/asreview/asreview-academy/blob/main/introducing-simulation-mode/README.md) for a detailed tutorial on running simulations with the makita workflow generator (Make it automatic section) (Windows + Mac). 
  
-In the command line cd to the main folder and run the command below on Windows to create the jobs file: 
+In the command line cd to the main folder and run the command below on Windows to create the folder structure with the jobs file: 
 
 ```
 asreview makita template basic -f jobs.bat
@@ -111,7 +111,7 @@ See [asreview/asreview-makita#templates](https://github.com/asreview/asreview-ma
 #### Start simulation
 
 In the main folder click on the generated jobs file which includes all simulation commands to start the simulations (Windows). 
-Sit back until the simulation is completed and all files are present in subfolders of the main folder.
+Sit back until the simulation is completed and all files are present in subfolders of the main folder (approx 2-3 hours if all 24 datasets are used).
 
 
 
