@@ -91,14 +91,15 @@ With modified scripts (available in [scripts folder](https://github.com/LSped/as
 
 ### Run simulations
 
+See [Simulation Mode Exercise](https://github.com/asreview/asreview-academy/blob/main/introducing-simulation-mode/README.md) for a detailed tutorial on running simulations with the makita workflow generator (Make it automatic section) (Windows + Mac). 
+ 
 
 #### Create folders
 
 Create a main folder with a subfolder named 'data'. Place all 24 synergy datasets in the data subfolder. See [data folder](https://github.com/LSped/asreview-insights-metrics-comparability-main/tree/main/data) to download input data.
 
 #### CLI commands (on Windows)
-See [Simulation Mode Exercise](https://github.com/asreview/asreview-academy/blob/main/introducing-simulation-mode/README.md) for a detailed tutorial on running simulations with the makita workflow generator (Make it automatic section) (Windows + Mac). 
- 
+
 In the command line cd to the main folder and run the command below on Windows to create the jobs file: 
 
 ```
