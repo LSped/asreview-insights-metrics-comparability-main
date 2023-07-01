@@ -80,7 +80,7 @@ Functions added:
 These functions return plots of the TP, FP, TN, FN values. If x_absolute is specified, the x axis is returned in absolute numbers. By default the x-axis is returned as the fraction of the whole dataset screened.
 
 
-### ___init___.py
+### init.py
 
 - import `plot_cm`
 - Added `'plot_cm'` to `__all__`
