@@ -1,15 +1,13 @@
 # Scripts
 
-
-
 # Modified ASReview Insights Extension
 
 
 [ASReview Insights](https://github.com/asreview/asreview-insights/tree/main/asreviewcontrib/insights) comprises the following files:
 
 - `_init_.py`* package initialization
-- `algorithms.py`* retrieve values of metrics
-- `entrypoint.py`* entrypoint for CLI
+- `algorithms.py`* retrieve values to calculate metrics
+- `entrypoint.py`* entrypoint for CLI 
 - `metrics.py`* returns sliced metrics at intercept in JSON file
 - `plot.py`* return plots of metrics
 - `utils.py`
@@ -28,9 +26,11 @@ Functions added:
 
 The four functions above retrieve the TP, FP, TN, FN values of the labels in a state file. Each function takes labels as an input argument. Moreoever, the arguments x_screened and x_absolute can be specified. 
 
-If x_screened is specified, the function returns the respective TP, FP, TN or FN values at the number of records screened. The returned values can later be used to create plots showing how the values progress over number of records screened. This is not yet implemented in ASReview Insights.
+If x_screened is specified as false, the function returns the respective TP, FP, TN or FN values at recall. The returned values at recall can later be used to report metrics at recall in a JSON file (stored in simulation folder) and Excel file (stored in tables folder). Here, if x_absolute=False (default) is specified, it returns recall as the x axis. This change is currently implemented in ASReview Insights (in algorithms.py).
 
-If x_screened is not specified, the function returns the respective TP, FP, TN or FN values over recall. The returned values over recall can later be used to report metrics at recall in a JSON file (stored in simulation folder) and Excel file (stored in tables folder). Here, if x_absolute=False (default) is specified, it returns recall as the x axis. This change is currently implemented in ASReview Insights (in algorithms.py).
+
+If x_screened is specified as true, the function returns the respective TP, FP, TN or FN values at the number of records screened. The returned values can later be used to create plots showing how the values progress over number of records screened. This is not yet implemented in ASReview Insights.
+
 
 
 ### metrics.py
