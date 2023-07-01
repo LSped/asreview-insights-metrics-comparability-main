@@ -9,11 +9,11 @@ The goal of this project was to enhance the ASReview Insights Extension by addin
 
 ### New Features
 
-Available in [ASReview Insights](https://github.com/asreview/asreview-insights)
+Available in [ASReview Insights](https://github.com/asreview/asreview-insights): 
 - Confusion matrix components @recall 
 - True Negative Rate @recall (TNR@r%) 
 
-Not yet available in [ASReview Insights](https://github.com/asreview/asreview-insights)
+Not yet available in ASReview Insights: 
 - Confusion matrix @records screened
 - Confusion matrix plots 
 See scripts folder.
