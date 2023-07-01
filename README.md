@@ -30,21 +30,28 @@ Not yet available in ASReview Insights:
 
 ## Ouput
 
-The TP, FP, TN, FN and the TNR are added to the existing output files.
-
-- metrics_sim_*dataset_x.json
-- data_metrics.csv
-- data_metrics.xlsx
 
 
 
-### Access 
+
+
+
+
+
+The TP, FP, TN, FN and the TNR are added to the existing metrics output files.
+
+- `metrics_sim_*dataset_x.json`
+- `data_metrics.csv`
+- `data_metrics.xlsx`
+
+
+
+### Access files
 
 #### Folder
-The JSON metrics output above can be accessed in the folder structure: output/simulation/dataset/metrics/metrics_sim_dataset_x.json
-
-The metrics output above can be accessed in EXCEL/CSV format in the folder structure: output/tables/data_metrics.csv
-Here the metrics for all datasets are shown.
+The JSON metrics output (metrics_sim_*dataset_x.json) can be accessed in the makita folder structure: output/simulation/dataset/metrics/metrics_sim_dataset_x.json
+The excel/csv metrics output can be accessed in the folder structure: output/tables/data_metrics.csv
+Note, in the excel and csv the metrics are shown for all datasets (in the data folder).
 
 ### Command line
  
