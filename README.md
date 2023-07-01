@@ -5,14 +5,14 @@
 
 
 ## Description
-The goal of this project was to enhance the [ASReview Insights Extension](https://github.com/asreview/asreview-insights) by adding the confusion matrix, which underlies most metrics, and by adding a new metric promoting comparability.
+The goal of this project was to enhance the [ASReview Insights Extension](https://github.com/asreview/asreview-insights) by adding the confusion matrix, which underlies most metrics, and by adding a new metric promoting comparability: TNR@r%.
 
 ## Table of contents
 
 - `data` instructions for data access
 - `scripts` modified scripts with explanations 
 - `output` confusion matrix (metrics + plot), tnr (metrics) for 24 datasets
-- `Metrics-Implementation-Analysis` statistical analysis of WSS@r & TNR@r 
+- `analysis` jupyter notebook with statistical analysis of WSS@r & TNR@r 
 - `gitignore`
 - `LICENCE`
 - `README.md`
@@ -26,6 +26,331 @@ Already Available in [ASReview Insights](https://github.com/asreview/asreview-in
 Not yet available in ASReview Insights: 
 - Confusion matrix (TP, FP, TN, FN) @records screened
 - Confusion matrix plot 
+
+
+### Ouput
+
+The TP, FP, TN, FN and the TNR are added to the existing output files.
+
+- metrics_sim_*dataset_x.json
+- data_metrics.csv
+- data_metrics.xlsx
+
+
+
+### Access 
+
+#### Folder
+The JSON metrics output above can be accessed in the folder structure: output/simulation/dataset/metrics/metrics_sim_dataset_x.json
+
+The metrics output above can be accessed in EXCEL/CSV format in the folder structure: output/tables/data_metrics.csv
+Here the metrics for all datasets are shown.
+
+### Command line
+ 
+The `metrics` subcommand computes the metrics and displays them in the command line.
+
+```
+asreview metrics YOUR_ASREVIEW_FILE.asreview
+```
+
+Intercepts can be specified as seen below:
+
+```
+asreview metrics YOUR_ASREVIEW_FILE.asreview --cm 0.85
+```
+
+
+```
+asreview metrics YOUR_ASREVIEW_FILE.asreview --tnr 0.85
+```
+
+
+## Example metrics output
+```
+{
+    "asreviewVersion": "1.2",
+    "apiVersion": "1.1.2",
+    "data": {
+        "items": [
+            {
+                "id": "recall",
+                "title": "Recall",
+                "value": [
+                    [
+                        0.1,
+                        0.6428571428571429
+                    ],
+                    [
+                        0.25,
+                        0.9285714285714286
+                    ],
+                    [
+                        0.5,
+                        0.9285714285714286
+                    ],
+                    [
+                        0.75,
+                        1.0
+                    ],
+                    [
+                        0.9,
+                        1.0
+                    ]
+                ]
+            },
+            {
+                "id": "wss",
+                "title": "Work Saved over Sampling",
+                "value": [
+                    [
+                        0.95,
+                        0.6875
+                    ]
+                ]
+            },
+            {
+                "id": "erf",
+                "title": "Extra Relevant record Found",
+                "value": [
+                    [
+                        0.1,
+                        0.5714285714285714
+                    ]
+                ]
+            },
+            {
+                "id": "atd",
+                "title": "Average time to discovery",
+                "value": 32.07142857142857
+            },
+            {
+                "id": "td",
+                "title": "Time to discovery",
+                "value": [
+                    [
+                        81,
+                        1
+                    ],
+                    [
+                        98,
+                        3
+                    ],
+                    [
+                        235,
+                        5
+                    ],
+                    [
+                        6,
+                        12
+                    ],
+                    [
+                        236,
+                        13
+                    ],
+                    [
+                        179,
+                        14
+                    ],
+                    [
+                        127,
+                        18
+                    ],
+                    [
+                        30,
+                        19
+                    ],
+                    [
+                        48,
+                        23
+                    ],
+                    [
+                        42,
+                        30
+                    ],
+                    [
+                        147,
+                        31
+                    ],
+                    [
+                        89,
+                        48
+                    ],
+                    [
+                        247,
+                        53
+                    ],
+                    [
+                        65,
+                        179
+                    ]
+                ]
+            },
+            {
+                "id": "tp",
+                "title": "True positives are the number of relevant records found",
+                "value": [
+                    [
+                        0.95,
+                        13
+                    ],
+                    [
+                        1,
+                        14
+                    ]
+                ]
+            },
+            {
+                "id": "fp",
+                "title": "False positives are the number of irrelevant records reviewed at recall level",
+                "value": [
+                    [
+                        0.95,
+                        40
+                    ],
+                    [
+                        1,
+                        165
+                    ]
+                ]
+            },
+            {
+                "id": "tn",
+                "title": "True negatives are the number of irrelevant records correctly not reviewed at recall level",
+                "value": [
+                    [
+                        0.95,
+                        202
+                    ],
+                    [
+                        1,
+                        77
+                    ]
+                ]
+            },
+            {
+                "id": "fn",
+                "title": "False negatives are the number of relevant records not found at recall level",
+                "value": [
+                    [
+                        0.95,
+                        1
+                    ],
+                    [
+                        1,
+                        0
+                    ]
+                ]
+            },
+            {
+                "id": "tnr",
+                "title": "True negative rate (Specificity)",
+                "value": [
+                    [
+                        0.95,
+                        0.834711
+                    ],
+                    [
+                        1,
+                        0.318182
+                    ]
+                ]
+            }
+        ]
+    }
+}
+```
+
+### At different cm intercept
+
+```
+            {
+                "id": "tp",
+                "title": "True Positives",
+                "value": [
+                    [
+                        0.85,
+                        11
+                    ]
+                ]
+            },
+            {
+                "id": "fp",
+                "title": "False Positives",
+                "value": [
+                    [
+                        0.85,
+                        20
+                    ]
+                ]
+            },
+            {
+                "id": "tn",
+                "title": "True Negatives",
+                "value": [
+                    [
+                        0.85,
+                        222
+                    ]
+                ]
+            },
+            {
+                "id": "fn",
+                "title": "False Negatives",
+                "value": [
+                    [
+                        0.85,
+                        3
+                    ]
+                ]
+            }
+```
+
+### At different tnr intercept
+
+```
+ 	    {
+                "id": "tnr",
+                "title": "True Negative Rate (Specificity)",
+                "value": [
+                    [
+                        0.85,
+                        0.917355
+                    ]
+                ]
+            }
+        
+```
+
+
+
+## Plots
+
+
+A new plot is outputed, which can be displayed by running the command below in the command line: 
+
+```
+asreview plot cm YOUR_ASREVIEW_FILE.asreview
+```
+This displays the confusion matrix plot with x-axis as fraction screened of whole dataset.
+
+```
+asreview plot cm YOUR_ASREVIEW_FILE.asreview --x_absolute
+```
+
+This displays x-axis in absolute numbers (i.e., number of records screened).
+
+
+### Example plot output
+
+
+![Plot](https://github.com/LSped/asreview-insights-metrics-comparability-main/blob/main/output/cm_plot_sim_Donners_2021_0.png)
+
+![Plot](https://github.com/LSped/asreview-insights-metrics-comparability-main/blob/main/output/cm_plot_sim_Donners_2021_0_absolute.png)
+
+
+
+
 
 
 ## How to run the modified scripts
