@@ -35,7 +35,7 @@ If x_screened is specified as true, the function returns the respective TP, FP, 
 ### metrics.py
 
 Dependencies:
-- `_tp_values, _fp_values, _tn_values, _fn_values` from algorithms.py
+- `_tp_values, _fp_values, _tn_values, _fn_values from algorithms.py`
 
 
 Functions added:
@@ -53,9 +53,8 @@ Functions added:
 - `tnr(state_obj, intercept, priors=False, x_absolute=False)`
 - `_tnr(labels, intercept, x_absolute=False)`
 
-The functions are added the retrieve the values sliced at a given intercept to stored in JSON file. 
- 
-`tp(), fp(), tn(), fn()` are the main functions, which input a state object. They return values retrieved from the helper functions `_tp(), _fp(), _tn(), _fn()`.
+
+`tp(), fp(), tn(), fn()` are the main functions, which input a state object (labels). They return values retrieved from the helper functions `_tp(), _fp(), _tn(), _fn()`.
 The helper functions input lables and return the sliced values at a given intercept.
 
 The `tn()` function inputs a state object and returns values retrieved from the _tnr() helper function.
@@ -71,17 +70,17 @@ All sliced TP, FP, TN, FN values and TNR are added to the JSON ouput.
 
 ### plot.py
 
-Added imports
-- import `_tp_values, _fp_values, _tn_values, _fn_values`
+Dependencies:
+- `_tp_values, _fp_values, _tn_values, _fn_values from algorithms.py`
 
 Functions added:
 - `plot_cm(ax, state_obj, priors=False, x_screened=True, x_absolute=False)`
 - `_plot_cm(ax, labels, x_screened=True, x_absolute=False)`
 
-These functions return plots of the TP, FP, TN, FN values. If x_absolute is specified, the x axis is returned in absolute numbers. By default the x-axis is the fraction screened of the whole dataset.
+These functions return plots of the TP, FP, TN, FN values. If x_absolute is specified, the x axis is returned in absolute numbers. By default the x-axis is returned as the fraction of the whole dataset screened.
 
 
-### `__init__.py`
+### __init__.py
 
 - import `plot_cm`
 - Added `'plot_cm'` to `__all__`
