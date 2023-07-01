@@ -342,10 +342,10 @@ Note ASReview files are located in output/simulation/dataset/state_files.
 
 ### Intercepts can be specified as seen below:
 
+
 ```
 asreview metrics YOUR_ASREVIEW_FILE.asreview --cm 0.85
 ```
-
 
 ```
 asreview metrics YOUR_ASREVIEW_FILE.asreview --tnr 0.85
