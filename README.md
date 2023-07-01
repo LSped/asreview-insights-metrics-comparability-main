@@ -41,7 +41,7 @@ See [ASReview Insights](https://github.com/asreview/asreview-insights) for a def
 See [ASReview Insights](https://github.com/asreview/asreview-insights) for the definition and rationale of implementation of the TNR@r%.
 
 
-## Get to the New Ouput
+## Get to the New Output
 
 To see the new output, a simulation needs to be run with the modified scripts. 
 
@@ -445,6 +445,9 @@ This displays x-axis in absolute numbers (i.e., number of records screened).
 
 Too see all the output files, see the Jupyter Notebook in the [output folder](https://github.com/LSped/asreview-insights-metrics-comparability-main/tree/main/output).
 
+
+
+## Analysis WSS@r% and TNR@r%
 
 
 
