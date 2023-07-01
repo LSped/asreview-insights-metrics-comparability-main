@@ -376,7 +376,7 @@ def _plot_cm(ax, labels, x_screened=True, x_absolute=False):
 
    
     ax.set_title("Confusion Matrix Plot")
-    ax.set(xlabel=xlabel, ylabel='TP, FP, TN, FN')
+    ax.set(xlabel=xlabel, ylabel='TP, FP, TN, FN Count')
    
     # Add legend
     ax.legend()
