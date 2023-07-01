@@ -5,7 +5,11 @@
 
 
 ## Description
+<<<<<<< Updated upstream
 The goal of this project was to enhance the ASReview Insights Extension by adding the confusion matrix, which underlies most metrics, and by adding a new metric promoting comparability: TNR@r%.
+=======
+The goal of this project was to enhance the [ASReview Insights Extension](https://github.com/asreview/asreview-insights) by adding the confusion matrix, which underlies most metrics, and by adding a new metric promoting comparability.
+>>>>>>> Stashed changes
 
 ## Table of contents
 
@@ -20,12 +24,13 @@ The goal of this project was to enhance the ASReview Insights Extension by addin
 ### New Features
 
 Already Available in [ASReview Insights](https://github.com/asreview/asreview-insights): 
-- Confusion matrix components (TP, FP, TN, FN) @recall 
+- Confusion matrix (TP, FP, TN, FN) @recall 
 - True Negative Rate @recall (TNR@r%) 
 
 Not yet available in ASReview Insights: 
-- Confusion matrix @records screened
-- Confusion matrix plots 
+- Confusion matrix (TP, FP, TN, FN) @records screened
+- Confusion matrix plot 
+
 
 ## How to run the modified scripts
 
