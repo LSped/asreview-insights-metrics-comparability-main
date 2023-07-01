@@ -467,9 +467,11 @@ See README.
 
 See README.
 
-### 4. Analysis
+### 4. Output
+See README and ouput folder.
 
-See postprocessing folder.
+### 5. Analysis
+See README and postprocessing folder.
 
 ## License
 
