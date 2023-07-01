@@ -145,7 +145,7 @@ Note ASReview files are located in output/simulation/dataset/state_files.
 
 
 
-## Example metrics output
+## Example ASReview Insights metrics output
 ```
 {
     "asreviewVersion": "1.2",
@@ -340,7 +340,7 @@ Note ASReview files are located in output/simulation/dataset/state_files.
 }
 ```
 
-####Intercepts can be specified as seen below:
+### Intercepts can be specified as seen below:
 
 ```
 asreview metrics YOUR_ASREVIEW_FILE.asreview --cm 0.85
