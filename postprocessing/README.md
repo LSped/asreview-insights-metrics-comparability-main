@@ -1,6 +1,4 @@
 ## Postprocessing
 
 
-To provide a preliminary analysis of the difference in WSS95% and TNR95% scores across datasets. A default simulation (TF-IDF + NB) was run on 24 datasets of the synergy dataset. (Note: Brouwer_2019 and Walker_2018 are excluded due to their high computation time)
-
-See Jupyter Notebook.
+To provide a preliminary statistical analysis of the difference in WSS95% and TNR95% scores across datasets, a naïve Bayes and TF-IDF simulation was run on 24 datasets of 26 synergy datasets. The resulting WSS95% and TNR95% scores were compared with statistical tests. See Jupyter Notebook.
