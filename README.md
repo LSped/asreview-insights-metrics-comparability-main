@@ -467,7 +467,7 @@ See README.
 
 See README.
 
-### 4. Jupyter Notebook
+### 4. Analysis
 
 See postprocessing folder.
 
