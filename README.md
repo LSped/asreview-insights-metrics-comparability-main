@@ -38,10 +38,10 @@ See [ASReview Insights](https://github.com/asreview/asreview-insights) for a def
 
 #### Specificity / True Negative Rate (TNR) 
 
-See [ASReview Insights](https://github.com/asreview/asreview-insights) for the definition and rationale of implementation.
+See [ASReview Insights](https://github.com/asreview/asreview-insights) for the definition and rationale of implementation of the TNR@r%.
 
 
-## Get to the Ouput
+## Get to the New Ouput
 
 To see the new output, a simulation needs to be run with the modified scripts. 
 
@@ -96,7 +96,7 @@ See [Simulation Mode Exercise](https://github.com/asreview/asreview-academy/blob
 
 #### Step 1: Create folders
 
-Create a main folder with a subfolder named 'data'. Place all 24 synergy datasets in the data subfolder. See [data folder](https://github.com/LSped/asreview-insights-metrics-comparability-main/tree/main/data) to download input data.
+Create a main folder with a subfolder named 'data'. Place all 24 synergy datasets in the data subfolder. See [data folder](https://github.com/LSped/asreview-insights-metrics-comparability-main/tree/main/data) on how to download synergy datasets. Note, for an example output you can choose only a few datasets (e.g., the first 5). 
 
 #### Step 2: CLI commands (on Windows)
 
