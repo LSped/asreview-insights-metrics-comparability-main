@@ -449,7 +449,7 @@ Too see all the output files, see the Jupyter Notebook in the [output folder](ht
 
 ## Analysis WSS@r% and TNR@r%
 
-Spearman correlations were computed to evaluate the assocations between class imbalance, WSS@95%, and TNR@95%.
+Spearman correlations were computed to evaluate the associations between class imbalance, WSS@95%, and TNR@95%.
 See Analysis Notebook in [postprocessing](https://github.com/LSped/asreview-insights-metrics-comparability-main/tree/main/postprocessing) folder.
 
 
