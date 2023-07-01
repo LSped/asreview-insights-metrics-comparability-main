@@ -117,7 +117,7 @@ Sit back until the simulation is completed and all files are present in subfolde
 
 
 
-## Output
+## Access Output
 When the simulation is over you can find the TP, FP, TN, FN and the TNR in the metrics output files.
 
 - `metrics_sim_*dataset_x.json`
@@ -128,8 +128,9 @@ When the simulation is over you can find the TP, FP, TN, FN and the TNR in the m
 
 ### Access files
 
-#### Folder
+#### In Folder
 The JSON metrics output (metrics_sim_*dataset_x.json) can be accessed in the makita folder structure: output/simulation/dataset/metrics/metrics_sim_dataset_x.json
+
 The excel/csv metrics output can be accessed in the makita folder structure: output/tables/data_metrics.csv ; output/tables/data_metrics.csv
 Note, in the excel and csv the metrics are shown for all datasets (in the data folder).
 
